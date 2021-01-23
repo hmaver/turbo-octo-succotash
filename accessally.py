@@ -31,5 +31,3 @@ for i in range (duration):
       curr += 1
 
 print(curr)
-
-#Q2: BLOOD DISTRIBUTION
