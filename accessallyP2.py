@@ -1,9 +1,5 @@
-#Q2: BLOOD DISTRIBUTION
 # Get input
-inputAvailable = map(int,raw_input().split())
-patientsInput = map(int,raw_input().split())
-available = [inputAvailable[i] for i in range(len(inputAvailable))]
-patients = [patientsInput[i] for i in range(len(patientsInput))]
+
 
 # Function to see how much is left depending on units and patients left
 def unitsLeft(j,i):
@@ -51,8 +47,13 @@ def negativePatients():
 
   return unitsOfBlood
 
+inputAvailable = map(int,input().split())
+patientsInput = map(int,input().split())
+available = [inputAvailable[i] for i in range(len(list(inputAvailable)))]
+patients = [patientsInput[i] for i in range(len(list(patientsInput)))]
+
 s = positivePatients() + negativePatients()
 available = inputAvailable
 patients = patientsInput
 s1 = negativePatients() + positivePatients()
-print max(s,s1)
+print(max(s,s1))
