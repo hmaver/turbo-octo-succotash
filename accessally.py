@@ -1,3 +1,4 @@
+#Q1: Favourite Times
 duration = int(input("Input:"))
 hour = 12
 minutes = 0
@@ -30,3 +31,5 @@ for i in range (duration):
       curr += 1
 
 print(curr)
+
+#Q2: BLOOD DISTRIBUTION
